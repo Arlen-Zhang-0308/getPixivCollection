@@ -77,7 +77,6 @@ def getUserCollection(userNum, cookie=""):
     if not os.path.exists("pics"): 
         os.mkdir("pics")
 
-    return
     while True: 
         print(offset)
         pageUrl = "https://www.pixiv.net/ajax/user/" + userNum + "/illusts/bookmarks?tag=&offset=" + str(offset) + "&limit=" + str(limit) + "&rest=show"
@@ -106,7 +105,7 @@ if __name__ == "__main__":
             configData = json.load(jsonF)
         userId = configData["userId"]
         cookie = configData["cookie"]
-        
+
         proxyEnable = configData["proxy_enable"]
         proxyHttp = configData["proxy_http"]
         proxyHttps = configData["proxy_https"]
