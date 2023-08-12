@@ -1,6 +1,6 @@
 # getPixivCollection
 
-- Download your current Pixiv collections. 
+- Download your current Pixiv collections (bookmarks). 
 - This program will only download images which have not been downloaded yet. 
 
 ## requirements

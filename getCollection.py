@@ -74,6 +74,7 @@ def getUserCollection(userNum, cookie=""):
     offset = 0
     limit = 100
     userNum = str(userNum)
+    headers["Cookie"] = cookie
     if not os.path.exists("pics"): 
         os.mkdir("pics")
 
@@ -117,7 +118,7 @@ if __name__ == "__main__":
             os.environ["https_proxy"] = proxyHttps
             # print(proxyHttp)
             # print(proxyHttps)
-        # getUserCollection(77636301)
+        getUserCollection(userId, cookie)
     else: 
         print("Need user config! ")
     
