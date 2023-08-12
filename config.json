@@ -1,0 +1,7 @@
+{
+    "userId": "", 
+    "cookie": "", 
+    "proxy_enable": false, 
+    "proxy_http": "http://127.0.0.1:7890", 
+    "proxy_https": "http://127.0.0.1:7890"
+}
